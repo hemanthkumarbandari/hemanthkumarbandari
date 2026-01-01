@@ -45,11 +45,6 @@ Hi there 👋
 
 ---
 
-## 🏆 GitHub Trophies:
-![](https://github-profile-trophy.vercel.app/?username=hemanthkumarbandari&theme=radical&margin-w=8)
-
----
-
 ## ✍️ Random Dev Quote:
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
@@ -59,15 +54,6 @@ Hi there 👋
 ![](https://github-contributor-stats.vercel.app/api?username=hemanthkumarbandari&limit=5&theme=dark)
 
 ---
-
-## 🐍 Contribution Snake
-
-<picture>
-  <source media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/hemanthkumarbandari/hemanthkumarbandari/output/github-contribution-grid-snake-dark.svg">
-  <img alt="github contribution snake animation"
-    src="https://raw.githubusercontent.com/hemanthkumarbandari/hemanthkumarbandari/output/github-contribution-grid-snake.svg">
-</picture>
 
 ---
 
