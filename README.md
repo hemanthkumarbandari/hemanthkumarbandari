@@ -44,6 +44,25 @@ Hi there 👋
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=hemanthkumarbandari&theme=dark&layout=compact)
 
 ---
+### 🔗 Coding Profiles
+<div align="left">
+  <a href="https://www.linkedin.com/in/hemanth-kumar-bandari-317516399//" target="_blank">
+    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg"
+         width="37" height="25" alt="LinkedIn" />
+  </a>
+
+  <a href="https://www.hackerrank.com/profile/hemanthkumarban4" target="_blank">
+    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/hackerrank/default.svg"
+         width="37" height="25" alt="HackerRank" />
+  </a>
+
+  <a href="https://leetcode.com/u/hemanthkumarbandari/" target="_blank">
+    <img src="https://cdn.simpleicons.org/leetcode/FFA116"
+         width="28" height="28" alt="LeetCode" />
+  </a>
+</div>
+
+---
 
 ## ✍️ Random Dev Quote:
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
