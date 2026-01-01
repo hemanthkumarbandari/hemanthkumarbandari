@@ -1,5 +1,5 @@
 Hi there 👋
-# 💫 About Me:
+# About Me:
 👨‍💻 I’m a **Computer Science student** passionate about both **development and design**.  
 
 🎨 I enjoy **UI/UX designing** and creating clean, user-friendly interfaces.  
