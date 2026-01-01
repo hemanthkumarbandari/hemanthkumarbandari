@@ -50,10 +50,6 @@ Hi there 👋
 
 ---
 
-## 🔝 Top Contributed Repos:
-![](https://github-contributor-stats.vercel.app/api?username=hemanthkumarbandari&limit=5&theme=dark)
-
----
 
 ---
 
