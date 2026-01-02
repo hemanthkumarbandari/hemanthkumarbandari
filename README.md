@@ -1,8 +1,11 @@
-Hi there 👋
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00F7FF,100:0077FF&height=200&section=header&text=Hi%20I'm%20Hemanth&fontSize=40&fontColor=ffffff" />
+</p>
 # About Me:
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Poppins&size=30&pause=1000&color=00F7FF&center=true&vCenter=true&width=500&lines=Hi%2C+I'm+Hemanth+%F0%9F%91%8B;Computer+Science+Student;Python+%7C+UI%2FUX+Designer;Future+AI+Engineer" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Montserrat&weight=700&size=34&pause=1200&color=FF4B91&center=true&vCenter=true&width=600&lines=Hi%2C+I'm+Hemanth;I+Build+Code+%26+Design;Turning+Ideas+Into+Reality+%F0%9F%9A%80" />
 </p>
+
 
 👨‍💻 I’m a **Computer Science student** passionate about both **development and design**.  
 
