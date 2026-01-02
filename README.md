@@ -1,5 +1,9 @@
 Hi there 👋
 # About Me:
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Poppins&size=30&pause=1000&color=00F7FF&center=true&vCenter=true&width=500&lines=Hi%2C+I'm+Hemanth+%F0%9F%91%8B;Computer+Science+Student;Python+%7C+UI%2FUX+Designer;Future+AI+Engineer" alt="Typing SVG" />
+</p>
+
 👨‍💻 I’m a **Computer Science student** passionate about both **development and design**.  
 
 🎨 I enjoy **UI/UX designing** and creating clean, user-friendly interfaces.  
