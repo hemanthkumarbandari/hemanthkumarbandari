@@ -1,11 +1,11 @@
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00F7FF,100:0077FF&height=200&section=header&text=Hi%20I'm%20Hemanth&fontSize=40&fontColor=ffffff" />
 </p>
-## ⚡ About Me 👨‍💻
-I’m a **Computer Science student** passionate about both **development and design**.
 
-🎨 I enjoy **UI/UX designing** and creating **clean, user-friendly interfaces**.
- and creating clean, user-friendly interfaces.  
+## ⚡ About Me 👨‍💻  
+👨‍💻 I’m a **Computer Science student** passionate about both **development and design**.  
+
+🎨 I enjoy **UI/UX designing** and creating **clean, user-friendly interfaces**.  
 
 🤝 I’m looking to collaborate on **Python projects, web apps, and beginner-friendly open-source projects** that combine design and code.  
 
