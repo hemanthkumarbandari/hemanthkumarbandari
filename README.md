@@ -5,8 +5,6 @@
 ## ⚡ About Me 👨‍💻  
 👨‍💻 I’m a **Computer Science student** passionate about both **development and design**.  
 
-🎨 I enjoy **UI/UX designing** and creating **clean, user-friendly interfaces**.  
-
 🤝 I’m looking to collaborate on **Python projects, web apps, and beginner-friendly open-source projects** that combine design and code.  
 
 🧠 I’m looking for help with **advanced Python concepts, Data Structures, and the fundamentals of AI/ML**.  
