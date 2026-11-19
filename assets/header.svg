@@ -1,89 +1,155 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380" role="img" aria-label="Hemanth Kumar Bandari, developer and designer, founder of BuildHive">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="Hemanth Kumar Bandari — developer, designer, founder of BuildHive">
 <defs>
-  <clipPath id="rr"><rect width="1200" height="380" rx="14"/></clipPath>
-  <pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#fff" stroke-opacity=".045"/></pattern>
-  <radialGradient id="glow" cx="78%" cy="50%" r="45%"><stop offset="0" stop-color="#00F7FF" stop-opacity=".10"/><stop offset="1" stop-color="#00F7FF" stop-opacity="0"/></radialGradient>
-  <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#00F7FF" stop-opacity="0"/><stop offset="1" stop-color="#00F7FF" stop-opacity=".10"/></linearGradient>
+  <linearGradient id="g-bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#060A10"/>
+    <stop offset="100%" stop-color="#04070C"/>
+  </linearGradient>
+  <radialGradient id="g-center" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#00F7FF" stop-opacity="0.07"/>
+    <stop offset="100%" stop-color="#00F7FF" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="g-left-purple" cx="18%" cy="45%" r="32%">
+    <stop offset="0%" stop-color="#7B2FFF" stop-opacity="0.055"/>
+    <stop offset="100%" stop-color="#7B2FFF" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="g-name" x1="0" x2="1">
+    <stop offset="0%" stop-color="#00C8FF"/>
+    <stop offset="38%" stop-color="#E6EDF3"/>
+    <stop offset="62%" stop-color="#E6EDF3"/>
+    <stop offset="100%" stop-color="#00C8FF"/>
+  </linearGradient>
+  <linearGradient id="g-line" x1="0" x2="1">
+    <stop offset="0%" stop-color="#00F7FF" stop-opacity="0"/>
+    <stop offset="20%" stop-color="#00F7FF" stop-opacity="0.5"/>
+    <stop offset="80%" stop-color="#00F7FF" stop-opacity="0.5"/>
+    <stop offset="100%" stop-color="#00F7FF" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="g-scan" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0%" stop-color="#00F7FF" stop-opacity="0"/>
+    <stop offset="50%" stop-color="#00F7FF" stop-opacity="0.07"/>
+    <stop offset="100%" stop-color="#00F7FF" stop-opacity="0"/>
+  </linearGradient>
+  <pattern id="p-dots" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+    <circle cx="30" cy="30" r="0.9" fill="#00F7FF" opacity="0.17"/>
+  </pattern>
+  <filter id="f-glow-name" x="-40%" y="-80%" width="180%" height="260%">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="f-node-glow" x="-500%" y="-500%" width="1100%" height="1100%">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <clipPath id="clip"><rect width="1200" height="300"/></clipPath>
 </defs>
-<style>
-  .m{font-family:ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace}
-  .s{font-family:Georgia,'Times New Roman',serif}
-  .rise{opacity:0;animation:rise 1.2s cubic-bezier(.2,.7,.2,1) forwards}
-  @keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
-  .blink{animation:blink 1.4s steps(2,start) infinite}
-  @keyframes blink{50%{opacity:0}}
-  .flow{stroke-dasharray:2 8;animation:flow 8s linear infinite}
-  @keyframes flow{to{stroke-dashoffset:-100}}
-</style>
-<g clip-path="url(#rr)">
-  <rect width="1200" height="380" fill="#0A0C10"/>
-  <rect width="1200" height="380" fill="url(#g)"/>
-  <rect width="1200" height="380" fill="url(#glow)"/>
 
-  <!-- constellation -->
-  <g stroke="#00F7FF" stroke-opacity=".22" fill="none">
-    <path class="flow" d="M540 40L620 60L700 110L780 50"/>
-    <path class="flow" d="M620 60L560 150L640 250L720 320"/>
-    <path class="flow" d="M700 110L640 250"/>
-    <path class="flow" d="M1090 70L1120 160L1060 300L1000 350"/>
-    <path class="flow" d="M1090 70L780 50"/>
-    <path class="flow" d="M500 330L640 250"/>
-  </g>
-  <g fill="#00F7FF">
-    <circle cx="540" cy="40" r="2.5" opacity=".5"><animate attributeName="opacity" values=".15;.8;.15" dur="4s" repeatCount="indefinite"/></circle>
-    <circle cx="620" cy="60" r="2.5" opacity=".5"><animate attributeName="opacity" values=".15;.8;.15" dur="5s" begin="-1s" repeatCount="indefinite"/></circle>
-    <circle cx="700" cy="110" r="2.5" opacity=".5"><animate attributeName="opacity" values=".15;.8;.15" dur="6s" begin="-2s" repeatCount="indefinite"/></circle>
-    <circle cx="780" cy="50" r="2.5" opacity=".5"><animate attributeName="opacity" values=".15;.8;.15" dur="4.5s" begin="-3s" repeatCount="indefinite"/></circle>
-    <circle cx="560" cy="150" r="2.5" opacity=".5"><animate attributeName="opacity" values=".15;.8;.15" dur="5.5s" begin="-.5s" repeatCount="indefinite"/></circle>
-    <circle cx="640" cy="250" r="2.5" opacity=".5"><animate attributeName="opacity" values=".15;.8;.15" dur="4.2s" begin="-2.5s" repeatCount="indefinite"/></circle>
-    <circle cx="720" cy="320" r="2.5" opacity=".5"><animate attributeName="opacity" values=".15;.8;.15" dur="6.5s" begin="-4s" repeatCount="indefinite"/></circle>
-    <circle cx="1090" cy="70" r="2.5" opacity=".5"><animate attributeName="opacity" values=".15;.8;.15" dur="5s" begin="-1.5s" repeatCount="indefinite"/></circle>
-    <circle cx="1120" cy="160" r="2.5" opacity=".5"><animate attributeName="opacity" values=".15;.8;.15" dur="4s" begin="-3.5s" repeatCount="indefinite"/></circle>
-    <circle cx="1060" cy="300" r="2.5" opacity=".5"><animate attributeName="opacity" values=".15;.8;.15" dur="5.8s" begin="-2.2s" repeatCount="indefinite"/></circle>
-    <circle cx="1000" cy="350" r="2.5" opacity=".5"><animate attributeName="opacity" values=".15;.8;.15" dur="4.8s" begin="-.8s" repeatCount="indefinite"/></circle>
-    <circle cx="500" cy="330" r="2.5" opacity=".5"><animate attributeName="opacity" values=".15;.8;.15" dur="5.2s" begin="-3.2s" repeatCount="indefinite"/></circle>
-  </g>
+<g clip-path="url(#clip)">
+  <rect width="1200" height="300" fill="url(#g-bg)"/>
+  <rect width="1200" height="300" fill="url(#g-center)"/>
+  <rect width="1200" height="300" fill="url(#g-left-purple)"/>
+  <rect width="1200" height="300" fill="url(#p-dots)"/>
 
-  <!-- wireframe globe -->
-  <g transform="translate(900 190)" fill="none" stroke="#00F7FF">
-    <circle r="120" stroke-opacity=".55"/>
-    <ellipse cy="-80" rx="89.4" ry="16" stroke-opacity=".18"/>
-    <ellipse cy="-40" rx="113" ry="20" stroke-opacity=".18"/>
-    <ellipse cy="0" rx="120" ry="22" stroke-opacity=".28"/>
-    <ellipse cy="40" rx="113" ry="20" stroke-opacity=".18"/>
-    <ellipse cy="80" rx="89.4" ry="16" stroke-opacity=".18"/>
-    <g stroke-opacity=".32">
-      <ellipse ry="120" rx="120"><animate attributeName="rx" values="120;85;0;85;120" dur="12s" begin="0s" repeatCount="indefinite"/></ellipse>
-      <ellipse ry="120" rx="104"><animate attributeName="rx" values="120;85;0;85;120" dur="12s" begin="-2s" repeatCount="indefinite"/></ellipse>
-      <ellipse ry="120" rx="60"><animate attributeName="rx" values="120;85;0;85;120" dur="12s" begin="-4s" repeatCount="indefinite"/></ellipse>
-      <ellipse ry="120" rx="0"><animate attributeName="rx" values="120;85;0;85;120" dur="12s" begin="-6s" repeatCount="indefinite"/></ellipse>
-      <ellipse ry="120" rx="60"><animate attributeName="rx" values="120;85;0;85;120" dur="12s" begin="-8s" repeatCount="indefinite"/></ellipse>
-      <ellipse ry="120" rx="104"><animate attributeName="rx" values="120;85;0;85;120" dur="12s" begin="-10s" repeatCount="indefinite"/></ellipse>
-    </g>
-    <g transform="rotate(-22)">
-      <ellipse rx="182" ry="46" stroke-opacity=".30" stroke-dasharray="2 7"/>
-      <circle r="4" fill="#00F7FF" stroke="none"><animateMotion dur="14s" repeatCount="indefinite" path="M-182,0 A182,46 0 1,1 182,0 A182,46 0 1,1 -182,0"/></circle>
-    </g>
-    <g transform="rotate(28)">
-      <ellipse rx="156" ry="34" stroke-opacity=".20" stroke-dasharray="1 9"/>
-      <circle r="3" fill="#F2F4F8" stroke="none"><animateMotion dur="20s" repeatCount="indefinite" path="M156,0 A156,34 0 1,0 -156,0 A156,34 0 1,0 156,0"/></circle>
-    </g>
-  </g>
-
-  <!-- scan line -->
-  <rect width="1200" height="110" fill="url(#scan)" opacity=".6">
-    <animate attributeName="y" values="-110;380" dur="9s" repeatCount="indefinite"/>
+  <!-- Animated scan line -->
+  <rect x="0" y="-55" width="1200" height="55" fill="url(#g-scan)">
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,355;0,355" keyTimes="0;0.72;1" dur="5.5s" repeatCount="indefinite" calcMode="spline" keySplines="0.5 0 0.5 1;0 0 1 1"/>
   </rect>
 
-  <!-- type -->
-  <text class="m rise" x="70" y="78" font-size="13" fill="#5C6673" letter-spacing="2" style="animation-delay:.1s">// PROFILE.README &#183; 17.3850&#176;N 78.4867&#176;E</text>
-  <text class="s rise" x="66" y="176" font-size="80" fill="#F2F4F8" letter-spacing="-2" style="animation-delay:.3s">Hemanth Kumar</text>
-  <text class="s rise" x="66" y="258" font-size="80" font-style="italic" fill="#00F7FF" letter-spacing="-2" style="animation-delay:.55s">Bandari<tspan fill="#F2F4F8" font-style="normal">.</tspan></text>
-  <text class="m rise" x="70" y="304" font-size="15" fill="#8B949E" letter-spacing=".5" style="animation-delay:.9s">developer &#215; designer &#183; founder, BuildHive</text>
-  <g class="rise" style="animation-delay:1.2s">
-    <circle cx="74" cy="342" r="4" fill="#00F7FF" class="blink"/>
-    <text class="m" x="90" y="346" font-size="12" fill="#5C6673" letter-spacing="1.5">OPEN TO FREELANCE WORK</text>
-  </g>
+  <!-- Corner bracket: TOP-LEFT -->
+  <path d="M24,80 L24,24 L80,24" fill="none" stroke="#00F7FF" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="24" cy="24" r="2.5" fill="#00F7FF" opacity="0.9"><animate attributeName="opacity" values="0.9;0.3;0.9" dur="3s" repeatCount="indefinite"/></circle>
+  <circle cx="24" cy="24" r="5" fill="none" stroke="#00F7FF" stroke-width="0.5"><animate attributeName="r" values="5;13;5" dur="3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.4;0;0.4" dur="3s" repeatCount="indefinite"/></circle>
+
+  <!-- Circuit traces from TL -->
+  <path d="M80,24 L120,24 L120,55 L145,55" fill="none" stroke="#00F7FF" stroke-width="0.8" opacity="0.25"/>
+  <circle cx="120" cy="55" r="1.5" fill="#00F7FF" opacity="0.4"><animate attributeName="opacity" values="0.4;0.1;0.4" dur="4.2s" repeatCount="indefinite"/></circle>
+  <circle cx="145" cy="55" r="1" fill="#00F7FF" opacity="0.5"/>
+  <path d="M24,80 L24,118 L52,118 L52,142 L78,142" fill="none" stroke="#00F7FF" stroke-width="0.8" opacity="0.2"/>
+  <circle cx="52" cy="142" r="1.5" fill="#00F7FF" opacity="0.35"><animate attributeName="opacity" values="0.35;0.08;0.35" dur="5.1s" repeatCount="indefinite"/></circle>
+  <circle cx="78" cy="142" r="1" fill="#00F7FF" opacity="0.4"/>
+  <text x="85" y="146" font-family="ui-monospace,monospace" font-size="8" fill="#00F7FF" opacity="0.25">0x2026</text>
+
+  <!-- Corner bracket: TOP-RIGHT -->
+  <path d="M1120,24 L1176,24 L1176,80" fill="none" stroke="#00F7FF" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="1176" cy="24" r="2.5" fill="#00F7FF" opacity="0.9"><animate attributeName="opacity" values="0.9;0.3;0.9" dur="4.1s" repeatCount="indefinite"/></circle>
+  <circle cx="1176" cy="24" r="5" fill="none" stroke="#00F7FF" stroke-width="0.5"><animate attributeName="r" values="5;13;5" dur="4.1s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.4;0;0.4" dur="4.1s" repeatCount="indefinite"/></circle>
+
+  <!-- Circuit traces from TR -->
+  <path d="M1120,24 L1080,24 L1080,55 L1055,55" fill="none" stroke="#00F7FF" stroke-width="0.8" opacity="0.25"/>
+  <circle cx="1080" cy="55" r="1.5" fill="#00F7FF" opacity="0.4"><animate attributeName="opacity" values="0.4;0.1;0.4" dur="3.7s" repeatCount="indefinite"/></circle>
+  <circle cx="1055" cy="55" r="1" fill="#00F7FF" opacity="0.5"/>
+  <path d="M1176,80 L1176,118 L1148,118 L1148,142 L1122,142" fill="none" stroke="#00F7FF" stroke-width="0.8" opacity="0.2"/>
+  <circle cx="1148" cy="142" r="1.5" fill="#00F7FF" opacity="0.35"><animate attributeName="opacity" values="0.35;0.08;0.35" dur="6.2s" repeatCount="indefinite"/></circle>
+  <text x="1050" y="146" font-family="ui-monospace,monospace" font-size="8" fill="#00F7FF" opacity="0.25" text-anchor="end">3.3V ·</text>
+
+  <!-- Corner bracket: BOTTOM-LEFT -->
+  <path d="M24,220 L24,276 L80,276" fill="none" stroke="#00F7FF" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="24" cy="276" r="2.5" fill="#00F7FF" opacity="0.9"><animate attributeName="opacity" values="0.9;0.3;0.9" dur="3.7s" repeatCount="indefinite"/></circle>
+  <path d="M24,220 L24,185 L52,185 L52,165 L78,165" fill="none" stroke="#00F7FF" stroke-width="0.8" opacity="0.2"/>
+  <circle cx="52" cy="165" r="1.5" fill="#7B2FFF" opacity="0.4"><animate attributeName="opacity" values="0.4;0.1;0.4" dur="4.8s" repeatCount="indefinite"/></circle>
+
+  <!-- Corner bracket: BOTTOM-RIGHT -->
+  <path d="M1120,276 L1176,276 L1176,220" fill="none" stroke="#00F7FF" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="1176" cy="276" r="2.5" fill="#00F7FF" opacity="0.9"><animate attributeName="opacity" values="0.9;0.3;0.9" dur="2.8s" repeatCount="indefinite"/></circle>
+  <path d="M1176,220 L1176,185 L1148,185 L1148,165 L1122,165" fill="none" stroke="#00F7FF" stroke-width="0.8" opacity="0.2"/>
+  <circle cx="1148" cy="165" r="1.5" fill="#7B2FFF" opacity="0.4"><animate attributeName="opacity" values="0.4;0.1;0.4" dur="5.6s" repeatCount="indefinite"/></circle>
+
+  <!-- Left constellation cluster -->
+  <line x1="148" y1="118" x2="172" y2="152" stroke="#00F7FF" stroke-width="0.5" opacity="0.08"/>
+  <line x1="172" y1="152" x2="148" y2="178" stroke="#00F7FF" stroke-width="0.5" opacity="0.08"/>
+  <line x1="172" y1="152" x2="198" y2="140" stroke="#00F7FF" stroke-width="0.5" opacity="0.08"/>
+  <circle cx="148" cy="118" r="1.5" fill="#00F7FF"><animate attributeName="opacity" values="0.6;0.1;0.6" dur="3.1s" repeatCount="indefinite"/></circle>
+  <circle cx="172" cy="152" r="2" fill="#00F7FF"><animate attributeName="opacity" values="0.8;0.2;0.8" dur="2.4s" repeatCount="indefinite"/></circle>
+  <circle cx="148" cy="178" r="1.5" fill="#7B2FFF"><animate attributeName="opacity" values="0.5;0.1;0.5" dur="4.5s" repeatCount="indefinite"/></circle>
+  <circle cx="198" cy="140" r="1" fill="#00F7FF"><animate attributeName="opacity" values="0.4;0.9;0.4" dur="3.8s" repeatCount="indefinite"/></circle>
+
+  <!-- Right constellation cluster -->
+  <line x1="1052" y1="118" x2="1028" y2="152" stroke="#00F7FF" stroke-width="0.5" opacity="0.08"/>
+  <line x1="1028" y1="152" x2="1055" y2="178" stroke="#00F7FF" stroke-width="0.5" opacity="0.08"/>
+  <line x1="1028" y1="152" x2="1002" y2="140" stroke="#00F7FF" stroke-width="0.5" opacity="0.08"/>
+  <circle cx="1052" cy="118" r="1.5" fill="#00F7FF"><animate attributeName="opacity" values="0.5;0.1;0.5" dur="2.9s" repeatCount="indefinite"/></circle>
+  <circle cx="1028" cy="152" r="2" fill="#00F7FF"><animate attributeName="opacity" values="0.7;0.2;0.7" dur="3.3s" repeatCount="indefinite"/></circle>
+  <circle cx="1055" cy="178" r="1.5" fill="#7B2FFF"><animate attributeName="opacity" values="0.4;0.8;0.4" dur="5.1s" repeatCount="indefinite"/></circle>
+  <circle cx="1002" cy="140" r="1" fill="#00F7FF"><animate attributeName="opacity" values="0.6;0.1;0.6" dur="4.2s" repeatCount="indefinite"/></circle>
+
+  <!-- Scattered top particles -->
+  <circle cx="400" cy="52" r="1" fill="#00F7FF"><animate attributeName="opacity" values="0.4;0;0.4" dur="4s" repeatCount="indefinite"/></circle>
+  <circle cx="800" cy="46" r="1.2" fill="#00F7FF"><animate attributeName="opacity" values="0.3;0.7;0.3" dur="3.2s" repeatCount="indefinite"/></circle>
+  <circle cx="600" cy="48" r="1" fill="#7B2FFF"><animate attributeName="opacity" values="0.5;0;0.5" dur="6s" repeatCount="indefinite"/></circle>
+  <circle cx="250" cy="58" r="0.8" fill="#00F7FF"><animate attributeName="opacity" values="0.3;0.8;0.3" dur="5s" repeatCount="indefinite"/></circle>
+  <circle cx="950" cy="55" r="0.8" fill="#00F7FF"><animate attributeName="opacity" values="0.6;0.1;0.6" dur="4.5s" repeatCount="indefinite"/></circle>
+
+  <!-- Top meta labels -->
+  <text x="122" y="40" font-family="ui-monospace,monospace" font-size="9" fill="#00F7FF" opacity="0.5" letter-spacing="2">[ v2.0 ]</text>
+  <text x="1078" y="40" font-family="ui-monospace,monospace" font-size="9" fill="#00F7FF" opacity="0.5" letter-spacing="2" text-anchor="end">[ open to collab ]</text>
+
+  <!-- Name: glow bloom layer -->
+  <text x="600" y="150" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="48" font-weight="700" fill="#00F7FF" opacity="0.1" text-anchor="middle" letter-spacing="5" filter="url(#f-glow-name)">HEMANTH KUMAR BANDARI</text>
+
+  <!-- Name: main gradient text -->
+  <text x="600" y="150" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" font-size="48" font-weight="700" fill="url(#g-name)" text-anchor="middle" letter-spacing="5">HEMANTH KUMAR BANDARI</text>
+
+  <!-- Underline -->
+  <line x1="300" y1="162" x2="900" y2="162" stroke="url(#g-line)" stroke-width="0.5"/>
+
+  <!-- Moving node on underline -->
+  <circle cy="162" r="3.5" fill="#00F7FF" filter="url(#f-node-glow)">
+    <animate attributeName="cx" values="300;900;300" dur="6s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  </circle>
+
+  <!-- Subtitle -->
+  <text x="600" y="193" font-family="ui-monospace,monospace" font-size="12" fill="#8B949E" text-anchor="middle" letter-spacing="5">DEVELOPER  ×  DESIGNER  ×  FOUNDER @ BUILDHIVE</text>
+
+  <!-- Bottom status bar -->
+  <line x1="118" y1="234" x2="1082" y2="234" stroke="#151C26" stroke-width="1"/>
+
+  <!-- Active indicator -->
+  <circle cx="132" cy="252" r="3" fill="#00F7FF">
+    <animate attributeName="opacity" values="1;0.2;1" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="3;4.5;3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="145" y="256" font-family="ui-monospace,monospace" font-size="9" fill="#00F7FF" opacity="0.65" letter-spacing="2">ACTIVE</text>
+
+  <text x="600" y="256" font-family="ui-monospace,monospace" font-size="9" fill="#484F58" letter-spacing="1" text-anchor="middle">HYDERABAD, INDIA  ·  FINAL YEAR CSE</text>
+  <text x="1078" y="256" font-family="ui-monospace,monospace" font-size="9" fill="#484F58" letter-spacing="1" text-anchor="end">hemanthkumarbandari001@gmail.com</text>
 </g>
-<rect x=".5" y=".5" width="1199" height="379" rx="14" fill="none" stroke="#1B222C"/>
 </svg>
